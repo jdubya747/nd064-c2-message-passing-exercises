@@ -1,7 +1,7 @@
 from .enums import Status
 
 
-def create_order(order_data):
+def create_orders(order_data):
     """
     This is a stubbed method of retrieving a resource. It doesn't actually do anything.
     """
