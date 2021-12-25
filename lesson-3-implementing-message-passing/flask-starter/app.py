@@ -1,6 +1,5 @@
 import json
 from flask import Flask, jsonify, request
-
 from .services import retrieve_orders, create_orders
 
 app = Flask(__name__)
