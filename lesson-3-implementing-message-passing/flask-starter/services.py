@@ -6,6 +6,7 @@ def create_orders(order_data):
     This is a stubbed method of retrieving a resource. It doesn't actually do anything.
     """
     # Do something to create the resource
+    #
     return order_data
 
 
