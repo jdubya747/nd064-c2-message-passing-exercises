@@ -10,7 +10,7 @@ def computers():
     if request.method == 'GET':
         return jsonify(retrieve_orders())
     elif request.method == 'POST':
-        return jsonify(create_orders(body=request.json))
+        return jsonify(create_orders(request.json))
     else:
         raise Exception('Unsupported HTTP request type.')
 
