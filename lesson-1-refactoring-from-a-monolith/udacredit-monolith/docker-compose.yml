@@ -12,6 +12,17 @@ services:
     ports:
       - "5000:5000"
 
+  api1:
+    build: api1
+    command: ["flask", "run", "--host=0.0.0.0"]
+    volumes:
+      - ./api:/backend
+    environment:
+      - FLASK_ENV=development
+      - FLASK_APP=app.py
+    ports:
+      - "5001:5000"
+
   client:
     tty: true
     build: client
