@@ -21,3 +21,4 @@ item = item_pb2.ItemMessage(
 
 
 response = stub.Create(item)
+print(response)
